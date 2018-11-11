@@ -402,13 +402,13 @@ function make_bubble_map(Map_mode="Type", ptr = 'Accident'){
 		start()
 	});
 	function start(){
-		draw_county( Counties);
-		draw_state( States);
-		make_bubble_map();
+		//draw_county( Counties);
+		//draw_state( States);
+		/*make_bubble_map();
 		State_Color();
 		County_Color();
 		update_county('01');
-		County_Color();
+		County_Color();*/
 	}
 	
 	

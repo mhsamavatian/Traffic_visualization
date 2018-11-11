@@ -107,11 +107,11 @@
 								 View Heatmaps
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								  <a class="dropdown-item" href="heatmap/frequency_all.html">All</a>
-								  <a class="dropdown-item" href="heatmap/frequency_congestion.html">Congestion</a>
-								  <a class="dropdown-item" href="heatmap/frequency_construction.html">Construction</a>
-								  <a class="dropdown-item" href="heatmap/frequency_event.html">Event</a>
-								  <a class="dropdown-item" href="heatmap/frequency_incident.html">Incident</a>
+								  <a class="dropdown-item" href="#">All</a>
+								  <a class="dropdown-item" href="#">Congestion</a>
+								  <a class="dropdown-item" href="#">Construction</a>
+								  <a class="dropdown-item" href="#">Event</a>
+								  <a class="dropdown-item" href="#">Incident</a>
 								</div>
 							  </li>
 					  </ul>
@@ -252,6 +252,19 @@
 
 		</div>
 		<div class="Map">
+			<div id="heatmaps" style="display:none">
+				<object width=1000 height=400 id="heatmap1" data="heatmap/frequency_all.html" style="display:none">
+				</object>
+				<object width=1000 height=400 id="heatmap2" data="heatmap/frequency_congestion.html" style="display:none">
+				</object>
+				<object width=1000 height=400 id="heatmap3" data="heatmap/frequency_construction.html" style="display:none">
+				</object>
+				<object width=1000 height=400 id="heatmap4" data="heatmap/frequency_event.html" style="display:none">
+				</object>
+				<object width=1000 height=400 id="heatmap5" data="heatmap/frequency_incident.html" style="display:none">
+				</object>
+			</div>
+			
 				<p id="load_text"> WAIT: Loading US states and counities data ...</p>
 				<!--<div id="progress_bar1"class="progress">
 						<div id="bar1" class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar"
@@ -265,7 +278,7 @@
 						</div>
 				</div>-->
 				<div id="map">
-						<svg width="1000" height="400"></svg>
+						<svg width="1200" height="400"></svg>
 				</div>
 			</div>
 
@@ -279,7 +292,7 @@
 			 </div>
 		</div>
 		
-		<script src="map.js"></script>
+		<!--<script src="map.js"></script>-->
 		<script src="plot.js"></script>
 		<script type="text/javascript">
 
